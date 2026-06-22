@@ -1,0 +1,5 @@
+SELECT LevelDisplayName,
+       COUNT(*) AS Total
+FROM system_logs
+GROUP BY LevelDisplayName
+ORDER BY Total DESC;
