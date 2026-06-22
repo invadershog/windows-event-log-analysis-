@@ -1,0 +1,6 @@
+SELECT ProviderName,
+       COUNT(*) AS Total
+FROM system_logs
+GROUP BY ProviderName
+ORDER BY Total DESC
+LIMIT 20;
