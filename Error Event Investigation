@@ -1,0 +1,6 @@
+SELECT ProviderName,
+       COUNT(*) AS ErrorCount
+FROM system_logs
+WHERE LevelDisplayName = 'Error'
+GROUP BY ProviderName
+ORDER BY ErrorCount DESC;
